@@ -80,7 +80,6 @@ float ** randomize_adjacency_wei(int n_rewires, int n_nodes, float (**adj), int 
             continue;
         }
         else {
-
             /* Store old values */
             float w_ij  = Arnd[i][j];
             float w_kl  = Arnd[k][l];
@@ -157,14 +156,14 @@ int main(void) {
     /* print_2D_array(n_nodes,n_nodes,Acp); */
 
 
-    system("clear");
-    for(int n_rewires=0; n_rewires<100; n_rewires++) {
-        printf("it = %d\n", n_rewires);
-        float **Arnd = randomize_adjacency_wei(n_rewires,n_nodes,A,0);
-        print_2D_array(n_nodes,n_nodes,Arnd);
-        sleep(1);
-        system("clear");
-    }
+    /* system("clear"); */
+    /* for(int n_rewires=0; n_rewires<100; n_rewires++) { */
+    /*     printf("it = %d\n", n_rewires); */
+    /*     float **Arnd = randomize_adjacency_wei(n_rewires,n_nodes,A,0); */
+    /*     print_2D_array(n_nodes,n_nodes,Arnd); */
+    /*     sleep(1); */
+    /*     system("clear"); */
+    /* } */
     /* float **Arnd = randomize_adjacency_wei(100,n_nodes,A,0,1); */
     /* print_2D_array(n_nodes,n_nodes,Arnd); */
 
